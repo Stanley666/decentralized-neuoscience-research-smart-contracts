@@ -12,9 +12,9 @@ These smart contracts are *not* the underlying smart contracts used in human det
 
 ## TODO 
 - [ ] Compile, launch, test... This is mostly just a proof-of-concept for explaining the Project Oblio, right now. 
-- [ ] Modify the proxy contract for easily updating the subject/experiment smart contracts when launched, including movement of contracts
-- [ ] Enable communication between experiments and subjects contract so that experiments can be tailored only to subjects with particular features 
 - [ ] Enable uPort integration for improving quality of subject participation
+- [ ] Modify the proxy contract for easily updating the subject/experiment smart contracts when launched, including updating the versions of contracts
+- [ ] Enable communication between experiments and subjects contract so that experiments can be tailored only to subjects with particular features 
 - [ ] Create an "Anonymous" Contract system, where subject identities are kept private. (This is probably best done off-chain, but should still be an option.)
 
 ## Experiments

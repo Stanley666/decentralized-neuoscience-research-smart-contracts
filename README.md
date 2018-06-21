@@ -1,6 +1,6 @@
 # Decentralized Neuroscience Research Smart Contracts
 
-These are basic smart contracts for running decentralized neuroscience experiments, public and private, over the Ethereum Ropsten network. They are used in Project Oblio's proof-of-concept demo in conjunction with Vybuds or any other EEG tool an experimenter may be interested in. However, note that consumer EEGs on the market do not have a tACS component attached, meaning that they are limited in their ability to self-validate data. 
+These are basic smart contracts for running decentralized neuroscience experiments, public and private, over the Ethereum Ropsten network. Anyone can submit an experiment and choose whether to make the data public or private only to them. These contracts are/will-be used in Project Oblio's proof-of-concept demo in conjunction with Vybuds or any other EEG tool an experimenter may be interested in. However, note that consumer EEGs on the market do not have a tACS component attached, meaning that they are limited in their ability to self-validate data. 
 
 These smart contracts are *not* the underlying smart contracts used in human detection, identification, and maintaining a one-person-one-vote budget system within the Project Oblio. These smart contracts, including the fork of geth used to maintain the network ("go-oblio") are under private development. 
  

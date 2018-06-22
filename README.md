@@ -10,11 +10,15 @@ These smart contracts are *not* the underlying smart contracts used in human det
 - [x] Basic subjects contract that records a subject's relevant data, if applicable. 
 - [x] Draft of a proxies contract controlled by benevelant centralization until Project Oblio's budget system can vote on experiment updates. 
 
-## TODO 
-- [ ] Compile, launch, test... This is mostly just a proof-of-concept for explaining the Project Oblio, right now. 
+## TODO (short-term)
+- [ ] Compile, launch, test... 
+- [ ] The proxy contract is intended to point to the "most recent" subject.sol and experiments.sol smart contracts. The owner of the proxies.sol contract should be able to update the ethereum address of these contracts, so apps only have to look at the proxies.sol address for the msot recent contract. Modify the proxy contract for easily updating the subject/experiment smart contracts when launched, including updating the versions of contracts. 
+- [ ] Enable communication between experiments and subjects contracts. Experimenters must be able to post an experiment with "Subject Requirements" and to read a potential subject's posted data (gender, ethnicity, etc) before allowing them to sign up for an experiment. Experimenters must be able to ONLY rate subjects who are part of their experimenters -- there must be a check to ensure that only valid experimenters can rate subjects and not anyone else. There must be a check to ensure that subjects cannot sign up for an experiment that has run out of ethereum/rewards. There must be checks to ensure that a subject's sent data matches appropriate formats (e.g. the string for birthdate must be in the form MM/DD/YYYY and not MM/DD/YY.). 
+- [ ] Compile, launch test, again
+
+
+## TODO (long-term)
 - [ ] Enable uPort integration for improving quality of subject participation
-- [ ] Modify the proxy contract for easily updating the subject/experiment smart contracts when launched, including updating the versions of contracts
-- [ ] Enable communication between experiments and subjects contract so that experiments can be tailored only to subjects with particular features 
 - [ ] Create an "Anonymous" Contract system, where subject identities are kept private. (This is probably best done off-chain, but should still be an option.)
 
 ## Experiments

@@ -1,0 +1,23 @@
+{
+  "name": "decentralized-neuoscience-research-smart-contracts",
+  "version": "1.0.0",
+  "description": "These are basic smart contracts for running decentralized neuroscience experiments, public and private, over the Ethereum Ropsten network. Anyone can submit an experiment and choose whether to make the data public or private only to them. These contracts are/will-be used in Project Oblio's proof-of-concept demo in conjunction with Vybuds or any other EEG tool an experimenter may be interested in. However, note that consumer EEGs on the market do not have a tACS component attached, meaning that they are limited in their ability to self-validate data.",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Project-Oblio/decentralized-neuoscience-research-smart-contracts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Project-Oblio/decentralized-neuoscience-research-smart-contracts/issues"
+  },
+  "homepage": "https://github.com/Project-Oblio/decentralized-neuoscience-research-smart-contracts#readme"
+}

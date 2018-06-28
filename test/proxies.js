@@ -38,11 +38,13 @@ contract('Proxies', function(accounts){
             return ProxiesInstance.createExperiment("Testing the Experiment", {from: accounts[0]});
         }).then((receipt)=>{
             console.log(receipt);
-            assert.equal(receipt.logs.length, 1, 'triggers one event');
-            assert.equal(receipt.logs[0].event, 'createExperimentEvent', 'should be the "createExperimentEvent" event');
-            assert.equal(receipt.logs[0].args.from, accounts[0], 'logs the account that purchased the tokens');
-            assert.equal(receipt.logs[0].args.nullHypothesis, "Testing the Experiment", 'has the correct message');
-            return "ll";//ProxiesInstance.experimentsContract().experiment(accounts[0])
+            //assert.equal(receipt.logs.length, 1, 'triggers one event');
+            //assert.equal(receipt.logs[0].event, 'createExperimentEvent', 'should be the "createExperimentEvent" event');
+            //assert.equal(receipt.logs[0].args.from, accounts[0], 'logs the account that purchased the tokens');
+            //assert.equal(receipt.logs[0].args.nullHypothesis, "Testing the Experiment", 'has the correct message');
+            //return "ll";//ProxiesInstance.experimentsContract().experiment(accounts[0])
+
+            return ProxiesInstance.experimentsContract.experiment(accounts[0])
         }).then((results)=>{
             console.log(results);
         })

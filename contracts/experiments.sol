@@ -13,12 +13,14 @@ contract Experiments {
 
     function () public {}
 
-    function createExperiment(string _nullHypothesis) public{
+    function createExperiment(string _nullHypothesis) public returns (bool success) {
         //require(!experiment[msg.sender].experimenter);
 
         experiment[msg.sender].experimenter = msg.sender;
         experiment[msg.sender].nullHypothesis = _nullHypothesis;
 
-        emit createExperimentEvent(msg.sender, _nullHypothesis);
+        //emit createExperimentEvent(msg.sender, _nullHypothesis);
+
+        return true;
     }
 }

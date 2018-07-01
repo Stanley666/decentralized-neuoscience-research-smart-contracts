@@ -18,7 +18,7 @@ contract Proxies {
     mapping(uint => string) public experimentDescriptions;
     mapping(uint => Experiment) public experiments;
 
-    mapping(address => Experiment[] ) public experimentsListByIds;
+    mapping(address => uint[] ) public experimentsListByIds;
 
     uint public experimentSize;
     uint public lastExperimentIndex;
@@ -51,7 +51,7 @@ contract Proxies {
         experiments[experimentSize].client = msg.sender; 
         experiments[experimentSize].isActive = true;
 
-        experimentsListByIds[msg.sender].push(Experiment(msg.sender, 1, 1, true));
+        experimentsListByIds[msg.sender].push(experimentSize);
 
 
         //linked list connecting
@@ -61,6 +61,10 @@ contract Proxies {
         }
         lastExperimentIndex = experimentSize;
 
+    }
+
+    function getIdsForContract(address _contractAddress) public view returns (uint[]) {
+        return experimentsListByIds[_contractAddress];
     }
 
 }

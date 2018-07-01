@@ -58,6 +58,20 @@ contract('Proxies', function(accounts){
             return ProxiesInstance.experiments(experimentSize.toNumber());
         }).then((addrClient)=>{
             assert.equal(addrClient[0], accounts[2], "Correct Client Ids");
+            ProxiesInstance.postExperiment("Post Title 5", "Post Description 5", {from : accounts[0]});
+            return ProxiesInstance.experimentSize();
+        }).then((experimentSize)=>{
+            //console.log("Experiment Size 3", experimentSize.toNumber());
+            return ProxiesInstance.experiments(experimentSize.toNumber());
+        }).then((addrClient)=>{
+            assert.equal(addrClient[0], accounts[0], "Correct Client Ids");
+            ProxiesInstance.postExperiment("Post Title 6", "Post Description 6", {from : accounts[2]});
+            return ProxiesInstance.experimentSize();
+        }).then((experimentSize)=>{
+            //console.log("Experiment Size 4", experimentSize.toNumber());
+            return ProxiesInstance.experiments(experimentSize.toNumber());
+        }).then((addrClient)=>{
+            assert.equal(addrClient[0], accounts[2], "Correct Client Ids");
         })
     });
 
@@ -74,21 +88,22 @@ contract('Proxies', function(accounts){
             return ProxiesInstance.experimentTitles(experimentSize);
         }).then((titleStr)=>{
             //console.log(titleStr);
-            assert.equal(titleStr, "Post Title 4", "Correct Title");
+            assert.equal(titleStr, "Post Title 6", "Correct Title");
         })
     });
 
 
-    it("Get back all the Experiment Data.", function(){
-        let experimentSize;
+    it("Count back user input data.", function(){
         return Proxies.deployed().then(function(instance){
             ProxiesInstance = instance;
-            return "ProxiesInstance.experimentsListByIds(accounts[0]).push(new Array(accounts[0], 1, 1, true));"
+            return ProxiesInstance.getIdsForContract(accounts[0]);
         }).then((reply)=>{
-            console.log(reply);
-            return ProxiesInstance.experimentsListByIds[accounts[0]];
+            assert.equal(reply.length, 4, "Correct array lenght.");
+            assert.equal(reply[reply.length - 1].toNumber(), 5, "Correct array lenght.");
+            return ProxiesInstance.getIdsForContract(accounts[2]);
         }).then((reply)=>{
-            console.log(reply);
+            assert.equal(reply.length, 2, "Correct array lenght.");
+            assert.equal(reply[reply.length - 1].toNumber(), 6, "Correct array lenght.");
         })
     });
 

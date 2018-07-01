@@ -55,26 +55,31 @@
         }
       ],
       "name": "createExperiment",
-      "outputs": [],
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
       "payable": false,
       "stateMutability": "nonpayable",
       "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b506104df806100206000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806308f7eb371461005b578063a684a7881461014a575b34801561005857600080fd5b50005b34801561006757600080fd5b5061009c600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101b3565b604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200180602001828103825283818151815260200191508051906020019080838360005b8381101561010e5780820151818401526020810190506100f3565b50505050905090810190601f16801561013b5780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b34801561015657600080fd5b506101b1600480360381019080803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929050505061028f565b005b60006020528060005260406000206000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102855780601f1061025a57610100808354040283529160200191610285565b820191906000526020600020905b81548152906001019060200180831161026857829003601f168201915b5050505050905082565b336000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550806000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600101908051906020019061036492919061040e565b50806040518082805190602001908083835b60208310151561039b5780518252602082019150602081019050602083039250610376565b6001836020036101000a03801982511681845116808217855250505050505090500191505060405180910390203373ffffffffffffffffffffffffffffffffffffffff167fc3b4d64232d725324afdb9c19e59f0303325f60508b494d1df518fccff9a319960405160405180910390a350565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061044f57805160ff191683800117855561047d565b8280016001018555821561047d579182015b8281111561047c578251825591602001919060010190610461565b5b50905061048a919061048e565b5090565b6104b091905b808211156104ac576000816000905550600101610494565b5090565b905600a165627a7a72305820f714db5dcb0e71b43053001a92452c7552e7066ac2184b8219f08e913181ef380029",
-  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806308f7eb371461005b578063a684a7881461014a575b34801561005857600080fd5b50005b34801561006757600080fd5b5061009c600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101b3565b604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200180602001828103825283818151815260200191508051906020019080838360005b8381101561010e5780820151818401526020810190506100f3565b50505050905090810190601f16801561013b5780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b34801561015657600080fd5b506101b1600480360381019080803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929050505061028f565b005b60006020528060005260406000206000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102855780601f1061025a57610100808354040283529160200191610285565b820191906000526020600020905b81548152906001019060200180831161026857829003601f168201915b5050505050905082565b336000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550806000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600101908051906020019061036492919061040e565b50806040518082805190602001908083835b60208310151561039b5780518252602082019150602081019050602083039250610376565b6001836020036101000a03801982511681845116808217855250505050505090500191505060405180910390203373ffffffffffffffffffffffffffffffffffffffff167fc3b4d64232d725324afdb9c19e59f0303325f60508b494d1df518fccff9a319960405160405180910390a350565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061044f57805160ff191683800117855561047d565b8280016001018555821561047d579182015b8281111561047c578251825591602001919060010190610461565b5b50905061048a919061048e565b5090565b6104b091905b808211156104ac576000816000905550600101610494565b5090565b905600a165627a7a72305820f714db5dcb0e71b43053001a92452c7552e7066ac2184b8219f08e913181ef380029",
-  "sourceMap": "28:623:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:623:0;;;;;;;",
-  "deployedSourceMap": "28:623:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:623:0;;155:49;;8:9:-1;5:2;;;30:1;27;20:12;5:2;155:49:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;155:49:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;331:317;;8:9:-1;5:2;;;30:1;27;20:12;5:2;331:317:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;155:49;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;331:317::-;496:10;458;:22;469:10;458:22;;;;;;;;;;;;;;;:35;;;:48;;;;;;;;;;;;;;;;;;557:15;517:10;:22;528:10;517:22;;;;;;;;;;;;;;;:37;;:55;;;;;;;;;;;;:::i;:::-;;624:15;590:50;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;51:19;36:153;;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;590:50:0;;;;;;;;;;;;;;;;612:10;590:50;;;;;;;;;;;;331:317;:::o;28:623::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity ^0.4.23;\r\n\r\ncontract Experiments {\r\n\r\n    struct Experiment {\r\n        address experimenter;\r\n        string nullHypothesis;\r\n    }\r\n\r\n    mapping (address => Experiment) public experiment;\r\n\r\n    event createExperimentEvent(address indexed from, string indexed nullHypothesis);\r\n\r\n    function () public {}\r\n\r\n    function createExperiment(string _nullHypothesis) public{\r\n        //require(!experiment[msg.sender].experimenter);\r\n\r\n        experiment[msg.sender].experimenter = msg.sender;\r\n        experiment[msg.sender].nullHypothesis = _nullHypothesis;\r\n\r\n        emit createExperimentEvent(msg.sender, _nullHypothesis);\r\n    }\r\n}\r\n",
+  "bytecode": "0x608060405234801561001057600080fd5b50610459806100206000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806308f7eb371461005b578063a684a7881461014a575b34801561005857600080fd5b50005b34801561006757600080fd5b5061009c600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101cb565b604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200180602001828103825283818151815260200191508051906020019080838360005b8381101561010e5780820151818401526020810190506100f3565b50505050905090810190601f16801561013b5780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b34801561015657600080fd5b506101b1600480360381019080803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091929192905050506102a7565b604051808215151515815260200191505060405180910390f35b60006020528060005260406000206000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690806001018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561029d5780601f106102725761010080835404028352916020019161029d565b820191906000526020600020905b81548152906001019060200180831161028057829003601f168201915b5050505050905082565b6000336000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600101908051906020019061037e929190610388565b5060019050919050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106103c957805160ff19168380011785556103f7565b828001600101855582156103f7579182015b828111156103f65782518255916020019190600101906103db565b5b5090506104049190610408565b5090565b61042a91905b8082111561042657600081600090555060010161040e565b5090565b905600a165627a7a7230582024949f27675a01f22d793806b931bd2a3533b689ab257b6b714003cba3507c490029",
+  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806308f7eb371461005b578063a684a7881461014a575b34801561005857600080fd5b50005b34801561006757600080fd5b5061009c600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101cb565b604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200180602001828103825283818151815260200191508051906020019080838360005b8381101561010e5780820151818401526020810190506100f3565b50505050905090810190601f16801561013b5780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b34801561015657600080fd5b506101b1600480360381019080803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091929192905050506102a7565b604051808215151515815260200191505060405180910390f35b60006020528060005260406000206000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690806001018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561029d5780601f106102725761010080835404028352916020019161029d565b820191906000526020600020905b81548152906001019060200180831161028057829003601f168201915b5050505050905082565b6000336000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600101908051906020019061037e929190610388565b5060019050919050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106103c957805160ff19168380011785556103f7565b828001600101855582156103f7579182015b828111156103f65782518255916020019190600101906103db565b5b5090506104049190610408565b5090565b61042a91905b8082111561042657600081600090555060010161040e565b5090565b905600a165627a7a7230582024949f27675a01f22d793806b931bd2a3533b689ab257b6b714003cba3507c490029",
+  "sourceMap": "28:673:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:673:0;;;;;;;",
+  "deployedSourceMap": "28:673:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:673:0;;155:49;;8:9:-1;5:2;;;30:1;27;20:12;5:2;155:49:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;155:49:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;331:367;;8:9:-1;5:2;;;30:1;27;20:12;5:2;331:367:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;155:49;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;331:367::-;397:12;520:10;482;:22;493:10;482:22;;;;;;;;;;;;;;;:35;;;:48;;;;;;;;;;;;;;;;;;581:15;541:10;:22;552:10;541:22;;;;;;;;;;;;;;;:37;;:55;;;;;;;;;;;;:::i;:::-;;686:4;679:11;;331:367;;;:::o;28:673::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.23;\r\n\r\ncontract Experiments {\r\n\r\n    struct Experiment {\r\n        address experimenter;\r\n        string nullHypothesis;\r\n    }\r\n\r\n    mapping (address => Experiment) public experiment;\r\n\r\n    event createExperimentEvent(address indexed from, string indexed nullHypothesis);\r\n\r\n    function () public {}\r\n\r\n    function createExperiment(string _nullHypothesis) public returns (bool success) {\r\n        //require(!experiment[msg.sender].experimenter);\r\n\r\n        experiment[msg.sender].experimenter = msg.sender;\r\n        experiment[msg.sender].nullHypothesis = _nullHypothesis;\r\n\r\n        //emit createExperimentEvent(msg.sender, _nullHypothesis);\r\n\r\n        return true;\r\n    }\r\n}\r\n",
   "sourcePath": "C:\\xampp\\htdocs\\BLOCKCHAIN\\decentralized-neuoscience-research-smart-contracts\\contracts\\Experiments.sol",
   "ast": {
     "absolutePath": "/C/xampp/htdocs/BLOCKCHAIN/decentralized-neuoscience-research-smart-contracts/contracts/Experiments.sol",
     "exportedSymbols": {
       "Experiments": [
-        50
+        48
       ]
     },
-    "id": 51,
+    "id": 49,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -94,9 +99,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 50,
+        "id": 48,
         "linearizedBaseContracts": [
-          50
+          48
         ],
         "name": "Experiments",
         "nodeType": "ContractDefinition",
@@ -160,7 +165,7 @@
             ],
             "name": "Experiment",
             "nodeType": "StructDefinition",
-            "scope": 50,
+            "scope": 48,
             "src": "58:89:0",
             "visibility": "public"
           },
@@ -169,7 +174,7 @@
             "id": 10,
             "name": "experiment",
             "nodeType": "VariableDeclaration",
-            "scope": 50,
+            "scope": 48,
             "src": "155:49:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -308,7 +313,7 @@
               "parameters": [],
               "src": "321:0:0"
             },
-            "scope": 50,
+            "scope": 48,
             "src": "302:21:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -316,14 +321,14 @@
           },
           {
             "body": {
-              "id": 48,
+              "id": 46,
               "nodeType": "Block",
-              "src": "387:261:0",
+              "src": "411:287:0",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 32,
+                    "id": 34,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -334,34 +339,34 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 25,
+                          "id": 27,
                           "name": "experiment",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 10,
-                          "src": "458:10:0",
+                          "src": "482:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Experiment_$6_storage_$",
                             "typeString": "mapping(address => struct Experiments.Experiment storage ref)"
                           }
                         },
-                        "id": 28,
+                        "id": 30,
                         "indexExpression": {
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 26,
+                            "id": 28,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 170,
-                            "src": "469:3:0",
+                            "referencedDeclaration": 108,
+                            "src": "493:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 27,
+                          "id": 29,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -369,7 +374,7 @@
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "469:10:0",
+                          "src": "493:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -380,13 +385,13 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "458:22:0",
+                        "src": "482:22:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Experiment_$6_storage",
                           "typeString": "struct Experiments.Experiment storage ref"
                         }
                       },
-                      "id": 29,
+                      "id": 31,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -394,7 +399,7 @@
                       "memberName": "experimenter",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 3,
-                      "src": "458:35:0",
+                      "src": "482:35:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -406,18 +411,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 30,
+                        "id": 32,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 170,
-                        "src": "496:3:0",
+                        "referencedDeclaration": 108,
+                        "src": "520:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
                         }
                       },
-                      "id": 31,
+                      "id": 33,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -425,26 +430,26 @@
                       "memberName": "sender",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "496:10:0",
+                      "src": "520:10:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "src": "458:48:0",
+                    "src": "482:48:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "id": 33,
+                  "id": 35,
                   "nodeType": "ExpressionStatement",
-                  "src": "458:48:0"
+                  "src": "482:48:0"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 40,
+                    "id": 42,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -455,34 +460,34 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 34,
+                          "id": 36,
                           "name": "experiment",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 10,
-                          "src": "517:10:0",
+                          "src": "541:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Experiment_$6_storage_$",
                             "typeString": "mapping(address => struct Experiments.Experiment storage ref)"
                           }
                         },
-                        "id": 37,
+                        "id": 39,
                         "indexExpression": {
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 35,
+                            "id": 37,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 170,
-                            "src": "528:3:0",
+                            "referencedDeclaration": 108,
+                            "src": "552:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 36,
+                          "id": 38,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -490,7 +495,7 @@
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "528:10:0",
+                          "src": "552:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -501,13 +506,13 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "517:22:0",
+                        "src": "541:22:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Experiment_$6_storage",
                           "typeString": "struct Experiments.Experiment storage ref"
                         }
                       },
-                      "id": 38,
+                      "id": 40,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -515,7 +520,7 @@
                       "memberName": "nullHypothesis",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 5,
-                      "src": "517:37:0",
+                      "src": "541:37:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
                         "typeString": "string storage ref"
@@ -525,118 +530,55 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 39,
+                      "id": 41,
                       "name": "_nullHypothesis",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 22,
-                      "src": "557:15:0",
+                      "src": "581:15:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
                         "typeString": "string memory"
                       }
                     },
-                    "src": "517:55:0",
+                    "src": "541:55:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 41,
+                  "id": 43,
                   "nodeType": "ExpressionStatement",
-                  "src": "517:55:0"
+                  "src": "541:55:0"
                 },
                 {
-                  "eventCall": {
+                  "expression": {
                     "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "expression": {
-                          "argumentTypes": null,
-                          "id": 43,
-                          "name": "msg",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 170,
-                          "src": "612:3:0",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_magic_message",
-                            "typeString": "msg"
-                          }
-                        },
-                        "id": 44,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "sender",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": null,
-                        "src": "612:10:0",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
-                        }
-                      },
-                      {
-                        "argumentTypes": null,
-                        "id": 45,
-                        "name": "_nullHypothesis",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 22,
-                        "src": "624:15:0",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_string_memory_ptr",
-                          "typeString": "string memory"
-                        }
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
-                        },
-                        {
-                          "typeIdentifier": "t_string_memory_ptr",
-                          "typeString": "string memory"
-                        }
-                      ],
-                      "id": 42,
-                      "name": "createExperimentEvent",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 16,
-                      "src": "590:21:0",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_string_memory_ptr_$returns$__$",
-                        "typeString": "function (address,string memory)"
-                      }
-                    },
-                    "id": 46,
+                    "hexValue": "74727565",
+                    "id": 44,
                     "isConstant": false,
                     "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
+                    "isPure": true,
+                    "kind": "bool",
                     "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "590:50:0",
+                    "nodeType": "Literal",
+                    "src": "686:4:0",
+                    "subdenomination": null,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "true"
                   },
-                  "id": 47,
-                  "nodeType": "EmitStatement",
-                  "src": "585:55:0"
+                  "functionReturnParameters": 26,
+                  "id": 45,
+                  "nodeType": "Return",
+                  "src": "679:11:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 49,
+            "id": 47,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -652,7 +594,7 @@
                   "id": 22,
                   "name": "_nullHypothesis",
                   "nodeType": "VariableDeclaration",
-                  "scope": 49,
+                  "scope": 47,
                   "src": "357:22:0",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -678,32 +620,59 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 24,
+              "id": 26,
               "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "387:0:0"
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 25,
+                  "name": "success",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 47,
+                  "src": "397:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 24,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "397:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "396:14:0"
             },
-            "scope": 50,
-            "src": "331:317:0",
+            "scope": 48,
+            "src": "331:367:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 51,
-        "src": "28:623:0"
+        "scope": 49,
+        "src": "28:673:0"
       }
     ],
-    "src": "0:653:0"
+    "src": "0:703:0"
   },
   "legacyAST": {
     "absolutePath": "/C/xampp/htdocs/BLOCKCHAIN/decentralized-neuoscience-research-smart-contracts/contracts/Experiments.sol",
     "exportedSymbols": {
       "Experiments": [
-        50
+        48
       ]
     },
-    "id": 51,
+    "id": 49,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -723,9 +692,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 50,
+        "id": 48,
         "linearizedBaseContracts": [
-          50
+          48
         ],
         "name": "Experiments",
         "nodeType": "ContractDefinition",
@@ -789,7 +758,7 @@
             ],
             "name": "Experiment",
             "nodeType": "StructDefinition",
-            "scope": 50,
+            "scope": 48,
             "src": "58:89:0",
             "visibility": "public"
           },
@@ -798,7 +767,7 @@
             "id": 10,
             "name": "experiment",
             "nodeType": "VariableDeclaration",
-            "scope": 50,
+            "scope": 48,
             "src": "155:49:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -937,7 +906,7 @@
               "parameters": [],
               "src": "321:0:0"
             },
-            "scope": 50,
+            "scope": 48,
             "src": "302:21:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -945,14 +914,14 @@
           },
           {
             "body": {
-              "id": 48,
+              "id": 46,
               "nodeType": "Block",
-              "src": "387:261:0",
+              "src": "411:287:0",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 32,
+                    "id": 34,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -963,34 +932,34 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 25,
+                          "id": 27,
                           "name": "experiment",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 10,
-                          "src": "458:10:0",
+                          "src": "482:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Experiment_$6_storage_$",
                             "typeString": "mapping(address => struct Experiments.Experiment storage ref)"
                           }
                         },
-                        "id": 28,
+                        "id": 30,
                         "indexExpression": {
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 26,
+                            "id": 28,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 170,
-                            "src": "469:3:0",
+                            "referencedDeclaration": 108,
+                            "src": "493:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 27,
+                          "id": 29,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -998,7 +967,7 @@
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "469:10:0",
+                          "src": "493:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -1009,13 +978,13 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "458:22:0",
+                        "src": "482:22:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Experiment_$6_storage",
                           "typeString": "struct Experiments.Experiment storage ref"
                         }
                       },
-                      "id": 29,
+                      "id": 31,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -1023,7 +992,7 @@
                       "memberName": "experimenter",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 3,
-                      "src": "458:35:0",
+                      "src": "482:35:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -1035,18 +1004,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 30,
+                        "id": 32,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 170,
-                        "src": "496:3:0",
+                        "referencedDeclaration": 108,
+                        "src": "520:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
                         }
                       },
-                      "id": 31,
+                      "id": 33,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1054,26 +1023,26 @@
                       "memberName": "sender",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "496:10:0",
+                      "src": "520:10:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "src": "458:48:0",
+                    "src": "482:48:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "id": 33,
+                  "id": 35,
                   "nodeType": "ExpressionStatement",
-                  "src": "458:48:0"
+                  "src": "482:48:0"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 40,
+                    "id": 42,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1084,34 +1053,34 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 34,
+                          "id": 36,
                           "name": "experiment",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 10,
-                          "src": "517:10:0",
+                          "src": "541:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Experiment_$6_storage_$",
                             "typeString": "mapping(address => struct Experiments.Experiment storage ref)"
                           }
                         },
-                        "id": 37,
+                        "id": 39,
                         "indexExpression": {
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 35,
+                            "id": 37,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 170,
-                            "src": "528:3:0",
+                            "referencedDeclaration": 108,
+                            "src": "552:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 36,
+                          "id": 38,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1119,7 +1088,7 @@
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "528:10:0",
+                          "src": "552:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -1130,13 +1099,13 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "517:22:0",
+                        "src": "541:22:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Experiment_$6_storage",
                           "typeString": "struct Experiments.Experiment storage ref"
                         }
                       },
-                      "id": 38,
+                      "id": 40,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -1144,7 +1113,7 @@
                       "memberName": "nullHypothesis",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 5,
-                      "src": "517:37:0",
+                      "src": "541:37:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
                         "typeString": "string storage ref"
@@ -1154,118 +1123,55 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 39,
+                      "id": 41,
                       "name": "_nullHypothesis",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 22,
-                      "src": "557:15:0",
+                      "src": "581:15:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
                         "typeString": "string memory"
                       }
                     },
-                    "src": "517:55:0",
+                    "src": "541:55:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 41,
+                  "id": 43,
                   "nodeType": "ExpressionStatement",
-                  "src": "517:55:0"
+                  "src": "541:55:0"
                 },
                 {
-                  "eventCall": {
+                  "expression": {
                     "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "expression": {
-                          "argumentTypes": null,
-                          "id": 43,
-                          "name": "msg",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 170,
-                          "src": "612:3:0",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_magic_message",
-                            "typeString": "msg"
-                          }
-                        },
-                        "id": 44,
-                        "isConstant": false,
-                        "isLValue": false,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "sender",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": null,
-                        "src": "612:10:0",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
-                        }
-                      },
-                      {
-                        "argumentTypes": null,
-                        "id": 45,
-                        "name": "_nullHypothesis",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 22,
-                        "src": "624:15:0",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_string_memory_ptr",
-                          "typeString": "string memory"
-                        }
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
-                        },
-                        {
-                          "typeIdentifier": "t_string_memory_ptr",
-                          "typeString": "string memory"
-                        }
-                      ],
-                      "id": 42,
-                      "name": "createExperimentEvent",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 16,
-                      "src": "590:21:0",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_string_memory_ptr_$returns$__$",
-                        "typeString": "function (address,string memory)"
-                      }
-                    },
-                    "id": 46,
+                    "hexValue": "74727565",
+                    "id": 44,
                     "isConstant": false,
                     "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
+                    "isPure": true,
+                    "kind": "bool",
                     "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "590:50:0",
+                    "nodeType": "Literal",
+                    "src": "686:4:0",
+                    "subdenomination": null,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "true"
                   },
-                  "id": 47,
-                  "nodeType": "EmitStatement",
-                  "src": "585:55:0"
+                  "functionReturnParameters": 26,
+                  "id": 45,
+                  "nodeType": "Return",
+                  "src": "679:11:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 49,
+            "id": 47,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1281,7 +1187,7 @@
                   "id": 22,
                   "name": "_nullHypothesis",
                   "nodeType": "VariableDeclaration",
-                  "scope": 49,
+                  "scope": 47,
                   "src": "357:22:0",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1307,23 +1213,50 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 24,
+              "id": 26,
               "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "387:0:0"
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 25,
+                  "name": "success",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 47,
+                  "src": "397:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 24,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "397:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "396:14:0"
             },
-            "scope": 50,
-            "src": "331:317:0",
+            "scope": 48,
+            "src": "331:367:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 51,
-        "src": "28:623:0"
+        "scope": 49,
+        "src": "28:673:0"
       }
     ],
-    "src": "0:653:0"
+    "src": "0:703:0"
   },
   "compiler": {
     "name": "solc",
@@ -1333,10 +1266,10 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x6f29790be28d19de712305eef840a6f68fa1ab92",
-      "transactionHash": "0x88c6bef787db46997a5fbd7b066b0fcde9713445dd13ee97340ca5f90c7f0564"
+      "address": "0xaea41c78b9d99b0955ec084a2e8a6a0d8973d803",
+      "transactionHash": "0xd8ab4c18e04ce90e415e2cc05d31ddbba65a8773fb9f12836d765020492ad4b6"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-06-25T19:06:06.555Z"
+  "updatedAt": "2018-07-01T13:00:54.052Z"
 }

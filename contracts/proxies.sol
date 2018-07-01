@@ -1,69 +1,70 @@
-/*contract Proxies{
-	address contractOwner = ""; // SQ's address for updating contracts
-	address public experimentsAddress;
-	address public subjectsAddress;
-	address[] public pastExperimentsAddress;
-	address[] public pastSubjectsAddress;
-	event ContractUpdated(
-		address experimentAddress;
-		address subjectAddress;
-	)
-
-	modifier isOwner(){
-		require(msg.sender == owner);
-		_;
-	}
-	function updateContracts(address expAddr, address subjAddr){
-		if(msg.sender==contractOwner){
-			// Allow scripts to search prior experiments in case a smart contract update breaks an experiment
-			pastExperimentsAddress.push(experimentAddress);
-			pastSubjectsAddress.push(subjectsAddress);
-			// New scripts will look here first for experiments/subjects
-			experimentAddress=expAddr;
-			subjectsAddress=subjAddr;
-			ContractUpdated(expAddr,subjAddr);
-		}
-	}
-}*/
-
 pragma solidity ^0.4.23;
 
-import "./Experiments.sol";
+/* TODO: decentralized neuroscience */
+
 
 contract Proxies {
+
+    enum rewardTypes {OBL,ETH}
+
+    struct Experiment {
+        address client;
+        uint prev;
+        uint next;
+        bool isActive;
+    }
+    
+    mapping(uint => string) public experimentTitles;
+    mapping(uint => string) public experimentDescriptions;
+    mapping(uint => Experiment) public experiments;
+
+    mapping(address => uint[] ) public experimentsListByIds;
+
+    uint public experimentSize;
+    uint public lastExperimentIndex;
+
+    uint public EXPERIMENT_DAYS = 3 days;
+
     string public version = "0.0.1";
-    address public contractOwner;
-    address[] public pastExperimentsAddress;
-    address[] public pastSubjectsAddress;
+    address public owner;
+    
 
-    Experiments public experimentsContract;
-
-    event ContractUpdated(address experimentAddr, address subjectAddr);
-
-    modifier isContractOwner() {
-        require(msg.sender == contractOwner);
+    modifier onlyOwner() {
+        require(msg.sender == owner);
         _;
     }
 
-    constructor(Experiments _experimentsContract) public {
-        contractOwner = msg.sender;
-        experimentsContract = _experimentsContract;
+    constructor() public {
+        owner = msg.sender;
     }
 
-    function updateContracts(address _experimentAddr, address _subjectAddr) public {
-        require(msg.sender == contractOwner);
-        pastExperimentsAddress.push(_experimentAddr);
-        pastSubjectsAddress.push(_subjectAddr);
-        emit ContractUpdated(_experimentAddr,_subjectAddr);
+    function updateVersion(string _ver) public onlyOwner {
+        version = _ver;
     }
 
-    function updateVersion(string _version) public isContractOwner {
-        //require(msg.sender == contractOwner);
-        version = _version;
+    function postExperiment(string _title, string _description) public {
+        experimentSize++;
+
+        experimentTitles[experimentSize] = _title;
+        experimentDescriptions[experimentSize] = _description;
+
+        experiments[experimentSize].client = msg.sender; 
+        experiments[experimentSize].isActive = true;
+
+        experimentsListByIds[msg.sender].push(experimentSize);
+
+
+        //linked list connecting
+        experiments[experimentSize].prev = lastExperimentIndex;
+        if(lastExperimentIndex > 0) {
+            experiments[experimentSize].next = experimentSize;
+        }
+        lastExperimentIndex = experimentSize;
+
     }
 
-    function createExperiment(string __nullHypothesis) public {
-        experimentsContract.createExperiment(__nullHypothesis);
+    function getIdsForContract(address _contractAddress) public view returns (uint[]) {
+        return experimentsListByIds[_contractAddress];
     }
 
 }
